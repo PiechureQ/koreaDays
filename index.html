@@ -20,7 +20,8 @@
         }
 
         const koreaDate = new Date('April 3, 2024 10:55:00')
-        document.querySelector('#daysTillKorea').innerText = calculateDayDifference(koreaDate, new Date())
+        document.querySelector('#daysTillKorea').innerText = calculateDayDifference(koreaDate, new Date()) + 1
+        document.querySelector('#daysTillKorea').setAttribute('real-days', calculateDayDifference(koreaDate, new Date()))
         </script>
     </body>
 </html>
